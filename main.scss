@@ -10,23 +10,31 @@ body {
     font-family: Montserrat;
 }
 
+// .header-bg-container {
+//     position: relative;
+//     height: 40vh;
+//     display: block;
+// }
+
 .header-bg {
-    position: absolute;
-    top: -100px;
-    left: -100px;
-    z-index: -1;
-    overflow-x: hidden;
-    transform: rotate(-22deg);
+    width: 100%;
+    height: 40vh;
     background: #1FAAFF;
-    height: 306px;
-    width: 511px;
+    border: none;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform: skewY(-22deg);
+    transform-origin: 0;
+    z-index: -1;
 }
 
 .watermark {
     position: absolute;
-    top: 236px;
-    left: -187px;
-    font-size: 377px;
+    top: 0.65em;
+    left: -0.47em;
+    font-size: 23.5em;
     font-weight: bold;
     color: #F8F4F4;
     z-index: -1;
@@ -35,41 +43,49 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding: 1.25em;
     color: white;
     display: flex;
     justify-content: space-between;
 }
 
 .hero {
-    margin-top: 85px;
-    padding: 0 40px;
+    margin-top: 5.31em;
+    padding: 0 2.5em;
 
     .heading {
+        color: #000;
+        display: inline-block;
         font-size: 2em;
     }
 
     .subtitle {
+        color: #1F1F1F;
         margin-top: 3em;
     }
 }
 
 .cta {
-    padding: 0 40px;
+    padding: 0 2.5em;
     float: right;
     
     .view-portfolio-btn {
         background-color: #0D3D5A;
-        border-radius: 4px;
+        border-radius: 0.25em;
         border: none;
         color: white;
         cursor: pointer;
         display: block;
-        margin-top: 2em;
         font-family: Montserrat;
         font-weight: bold;
-        font-size: 12px;
-        padding: 8px 10px;
-        text-decoration:none;
+        font-size: 0.75em;
+        padding: .6em 1.2em;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 550px) {
+    body {
+        font-size: 18px;
     }
 }
